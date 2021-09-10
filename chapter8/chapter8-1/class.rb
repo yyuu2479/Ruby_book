@@ -1,14 +1,19 @@
 class Drink
-  def order(name)
-    p self
-    puts "#{name}#{self.topping}をください！"
+  def initialize(name)
+    @name = name
   end
 
-  def topping
-    "エスプレッソショット"
+  def self.welcome
+    "いらっしゃいませ！"
+  end
+
+  def self.welcome_again
+    welcome + "いつもありがとうございます！！"
+  end
+
+  def name
+    @name
   end
 end
 
-d = Drink.new
-p d
-d.order("モカ")
+puts Drink.welcome_again
