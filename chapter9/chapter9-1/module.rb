@@ -1,16 +1,10 @@
-module WhippedCream
-  def whipped_cream
-    @name += "ホイップクリーム"
-  end
-end
-
-
+require_relative "module1"
 
 class Drink
   include WhippedCream
 
-  def initialize(name)
-    @name = name
+  def initialize
+    @name = "モカ"
   end
 
   def name
@@ -18,6 +12,6 @@ class Drink
   end
 end
 
-drink = Drink.new("モカ")
-drink.whipped_cream
-puts drink.name
+mocha = Drink.new
+mocha.whipped_cream
+puts mocha.name
