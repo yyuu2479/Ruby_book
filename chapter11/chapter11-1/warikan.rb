@@ -4,7 +4,7 @@ def method_name(bill, name)
 rescue
   puts "おっと、０人では割り勘できません"
 ensure
-  puts "ご利用ありがとうございました！！"
+  puts "ご利用ありがとうございました"
 end
 
 method_name(100, 0)
@@ -20,5 +20,5 @@ numbers.each do |number|
 rescue
   puts "おっと、０人では割り勘できません"
 ensure
-  puts "ご利用ありがとうございました！！"
+  puts "ご利用ありがとうございました"
 end
